@@ -1,4 +1,4 @@
-import re
+from utils.is_valid_phone import is_valid_phone
 
 def input_error(func):
     def inner(*args, **kwargs):
@@ -23,14 +23,6 @@ def input_error(func):
             if func.__name__ == "change_contact" or func.__name__ == "add_contact":
                 return "Error: The phone number must be 10 digits"
     return inner
-
-def is_valid_phone(phone):
-    pattern = r'^\d{10}$'
-
-    if re.match(pattern, phone):
-        return True
-    else:
-        return False
 
 def parse_input(user_input):
     cmd, *args = user_input.split()
