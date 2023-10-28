@@ -8,12 +8,13 @@ Task 2: In this task, we will continue to develop our virtual assistant with a C
 **How to use: **
 - Download the repository locally.
 - If you don't have installed Python locally, please install it from https://www.python.org/downloads/ or in another acceptable way for you.
-- Run the main.py file.
+- Task One: Run the main.py file.
+- Task Two: Run test_task_two.py file.
 - Follow the instructions in the console.
 
 ### Task 2 description
 Class `AddressBook`:
-- Implemented the `add_record` method, which adds a record to self.data.
+- Implemented the `add` method, which adds a record to self.data.
 - Implemented the `find` method, which finds a record by name.
 - Implemented the `delete` method, which deletes a record by name.
 - Class `Record`:
